@@ -1,7 +1,8 @@
 # Me and my IT exercises
 ## About me
 Hey:)
-My name is Marta Haluszka.This repository shows my first steps in the IT world.
+My name is Marta Haluszka.
+This repository shows my first steps in the IT world.
 I know quite a few tools and I have some tech skills which are nessesary to be good tester.
 In my work I had alerdy test web application and report the bugs I found in Jira
 I am precise and focused on details, determined and try to improve my knowledge every day.
