@@ -18,7 +18,9 @@ Search Bar Search Results - results displayed below the Search Bar input.
 Filter - available on Results Page, a menu on the left side allowing to refine Search Results based on
 predefined, dynamic, chainable presets.
 Suggestion - Suggested search term provided by API to the User based on the current Query of the
-Search Bar
+Search Bar.
+Query - text provided by the User in input of the Search Bar.
+
 #### Initial state
 Initial state by default should always be:
 1. Freshly reloaded Main Page.
@@ -69,20 +71,22 @@ To test functionality of the Search bar tester will type some inputs to Search B
    a) the enter button on the keyboard,
    b) the magnifying glass icon,
    c) the mouse.
-3. Correct inputs that are nocontained in the API, confirm this by using:
+3. Correct inputs that are not contained in the API, confirm this by using:
    a) the enter button on the keyboard,
    b) the magnifying glass icon,
    c) the mouse.
-4. Incorrect inputs that are nocontained in the API, confirm this by using:
+4. Incorrect inputs that are not contained in the API, confirm this by using:
    a) the enter button on the keyboard,
    b) the magnifying glass icon,
    c) the mouse.
 5. Correct inputs that are contained in the API,check all 3 categories of results using the keyboard and the mouse:
-   - Suggestion,
-   - Extensions,
-   - Filters.
+   a) Suggestion,
+   b) Extensions,
+   c) Filters.
 6. Correct inputs that are contained in the API, check show up and working of Search Results scrollbar, using:
-   - the keyboard,
-   - the mouse.
+   a) the keyboard,
+   b) the mouse.
 7. Incorrect inputs, check working of Suggestion.
+   a) full incorrect words,
+   b) minor typos in words.
 9.Regression checking of other functions of the web application.
