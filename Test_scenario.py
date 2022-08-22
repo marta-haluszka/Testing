@@ -88,4 +88,4 @@ To test functionality of the Search bar tester will type some inputs to Search B
 7. Incorrect inputs, check working of Suggestion.
     a) full incorrect words,
     b) minor typos.
-9.Regression checking of other functions of the web application.
+9. Regression checking of other functions of the web application.
