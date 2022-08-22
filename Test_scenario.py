@@ -35,8 +35,8 @@ and such comparison will define the result of the test.
 a. Search Bar allows to input text in the field.
 b. Search Bar will not display results if the response from API is empty.
 c. Search Bar will redirect the User to Results Page if a Query is provided when clicking
-Search Button (magnifying glass on right side of Search Bar)
-d. Search Bar will redirect the User to Results Page if a Query is provided when pressing
+Search Button (magnifying glass on right side of Search Bar).
+d. Search Bar will redirect the User to Results Page if a Query is provided when pressing.
 Enter
 2. Testing Search Bar Search Results
 a. Search Bar Search Results will display a type of result provided
