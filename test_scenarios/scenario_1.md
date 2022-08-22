@@ -2,7 +2,7 @@
 ## Test Scenario Workflow
 Test scenario describes a set of test cases (tester interactions) that should be performed to confirm
 functionality fully working on Application.
-Test of the Application will be made by Marta Haluszka 20.08.2022 on the Windows 10, Chrome browser, version 104.0.5112.81.
+Test of the Application will be made by *Marta Haluszka* *20.08.2022* on the *Windows 10*, *Chrome* browser, version *104.0.5112.81.*
 #### Dictionary
 * **Application** - set of functionality consisting of 2 web pages: Main Page and Results Page (see below),
 Search Bar component and its functionality.
@@ -41,14 +41,14 @@ Search Button (magnifying glass on right side of Search Bar).
 d. Search Bar will redirect the User to Results Page if a Query is provided when pressing.
 Enter
 2. Testing Search Bar Search Results
-a. Search Bar Search Results will display a type of result provided
-b. Search Bar Search Results will display 3 categories of results:
+   1.  Search Bar Search Results will display a type of result provided
+   2. Search Bar Search Results will display 3 categories of results:
    - Suggestion.
    - Extensions.
    - Filters.
-c. User can interact with results with a mouse (highlights selection on mouse over) or
+   3. User can interact with results with a mouse (highlights selection on mouse over) or
 keyboard.
-d. If Search Bar Search Results require more space to display results than available
+   4. If Search Bar Search Results require more space to display results than available
 within browser’s Viewport height Search Bar Search Results will be displayed with a
 scrollbar
 #### Result of the test
@@ -59,34 +59,34 @@ If the test sometimes FAILS and sometimes PASSES it should be marked as FAILED t
 it’s not clear what causes it to FAIL. Then it would be very advisable to include Network tab results for
 All test results should have screenshots provided to confirm results of the test.
 To test functionality of the Search bar tester will type some inputs to Search Bar and confirm this by using:
-   a) the enter button on the keyboard,
-   b) the magnifying glass icon,
-   c) the mouse.
+   1.  the enter button on the keyboard,
+   2.  the magnifying glass icon,
+   3.  the mouse.
 #### Test cases
 1. Correct inputs that are contained in the API, confirm this by using:
-   a) the enter button on the keyboard,
-   b) the magnifying glass icon,
-   c) the mouse.
+   1. the enter button on the keyboard,
+   2. the magnifying glass icon,
+   3. the mouse.
 2. Incorrect inputs that are contained in the API, confirm this by using:
-   a) the enter button on the keyboard,
-   b) the magnifying glass icon,
-   c) the mouse.
+   1.  the enter button on the keyboard,
+   2.  the magnifying glass icon,
+   3.  the mouse.
 3. Correct inputs that are not contained in the API, confirm this by using:
-   a) the enter button on the keyboard,
-   b) the magnifying glass icon,
-   c) the mouse.
+   1. the enter button on the keyboard,
+   2. the magnifying glass icon,
+   3.  the mouse.
 4. Incorrect inputs that are not contained in the API, confirm this by using:
-   a) the enter button on the keyboard,
-   b) the magnifying glass icon,
-   c) the mouse.
+   1. the enter button on the keyboard,
+   2. the magnifying glass icon,
+   3. the mouse.
 5. Correct inputs that are contained in the API,check all 3 categories of results using the keyboard and the mouse:
-   a) Suggestion,
-   b) Extensions,
-   c) Filters.
+   1. Suggestion,
+   2. Extensions,
+   3. Filters.
 6. Correct inputs that are contained in the API, check show up and working of Search Results scrollbar, using:
-   a) the keyboard,
-   b) the mouse.
+   1. the keyboard,
+   2. the mouse.
 7. Incorrect inputs, check working of Suggestion.
-   a) full incorrect words,
-   b) minor typos in words. 
-8. .Regression checking of other functions of the web application.
+   1. full incorrect words,
+   2. minor typos in words.
+8. Regression checking of other functions of the web application.
