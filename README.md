@@ -3,8 +3,8 @@
 Hey:)
 My name is Marta Haluszka.
 This repository shows my first steps in the IT world.
-I know quite a few tools and I have some tech skills which are nessesary to be good tester.
-In my work I had alerdy test web application and report the bugs I found in Jira
+I know quite a few tools and I have some tech skills which are necessary to be good tester.
+In my work I had already test web application and report the bugs I found in Jira
 I am precise and focused on details, determined and I try to improve my knowledge every day.
 In this repository I put some example of my work.
 Also, I am learning Python and I am putting my first program into this repository.
