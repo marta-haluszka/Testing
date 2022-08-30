@@ -34,11 +34,11 @@ All tests performed should have screenshots provided to confirm results of the t
 Test case will define expected results - these should be compared with results seen during the test
 and such comparison will define the result of the test.
 1. Testing basic Search Bar functionality
-a. Search Bar allows to input text in the field.
-b. Search Bar will not display results if the response from API is empty.
-c. Search Bar will redirect the User to Results Page if a Query is provided when clicking
-Search Button (magnifying glass on right side of Search Bar).
-d. Search Bar will redirect the User to Results Page if a Query is provided when pressing.
+   1.  Search Bar allows to input text in the field.
+   2. Search Bar will not display results if the response from API is empty. 
+   3. Search Bar will redirect the User to Results Page if a Query is provided when clicking
+Search Button (magnifying glass on right side of Search Bar). 
+   4. Search Bar will redirect the User to Results Page if a Query is provided when pressing.
 Enter
 2. Testing Search Bar Search Results
    1.  Search Bar Search Results will display a type of result provided
