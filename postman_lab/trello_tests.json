@@ -1,0 +1,113 @@
+# Some automative tests to action Create board. Use POST and add URL.
+# All of variable from URL was added to collection variables.
+
+POST {{basicURL}}boards/?name={{boardName}}&key={{key}}&token={{token}}
+
+let resBody
+
+pm.test("Should verify status code", () => {
+    pm.expect(pm.response.code).to.eql(200);
+    resBody = pm.response.json();
+})
+
+pm.test("Should verify created board name", () => {
+    pm.expect(resBody.name).to.eql(pm.collectionVariables.get("boardName"))
+})
+
+pm.test("Sholud verify ID lenght", () => {
+    pm.expect(resBody.id).to.length.greaterThan(10);
+    pm.collectionVariables.set("boardID", resBody.id);
+})
+
+# Some automative tests to action New list on board. Use POST and add URL
+# All of variable from URL was added to collection variables.
+
+POST {{basicURL}}boards/{{boardID}}/lists?name={{listName}}&key={{key}}&token={{token}}
+
+let resBody
+
+pm.test("Should verify status code", () => {
+    pm.expect(pm.response.code).to.eql(200);
+    resBody = pm.response.json();
+})
+
+pm.test("Should verify name list", () => {
+    pm.expect(resBody.name).to.eql(pm.collectionVariables.get("listName"))
+})
+
+pm.collectionVariables.set("listID", resBody.id)
+
+# Some automative tests to action Get board lists. Use GET and add URL.
+# All of variable from URL was added to collection variables.
+
+GET {{basicURL}}boards/{{boardID}}/lists?key={{key}}&token={{token}}
+
+let resBody
+
+pm.test("Should verify status code", () => {
+    pm.expect(pm.response.code).to.eql(200);
+    resBody = pm.response.json();
+})
+
+pm.test("Should verify close value", () => {
+    resBody.map(item => {
+        pm.expect(item.closed).to.eql(false);
+    })
+})
+
+pm.collectionVariables.set("listName", resBody.name)
+
+# Some automative tests to action Get board cards. Use GET and add URL.
+# All of variable from URL was added to collection variables.
+
+GET {{basicURL}}/boards/{{boardID}}/cards?key={{key}}&token={{token}}
+
+let resBody
+
+pm.test("Should verify status code", () => {
+    pm.expect(pm.response.code).eql(200);
+     resBody = pm.response.json();
+})
+
+pm.test("Should verify type of name", () => {
+    resBody.map(item => {
+         pm.expect(item.name).to.be.a("string")
+    })
+
+})
+
+pm.test("Should verify id lists and id board", () => {
+    resBody.map(item => {
+        pm.expect(item.idList).eql(pm.collectionVariables.get("listID"));
+        pm.expect(item.idBoard).eql(pm.collectionVariables.get("boardID"));
+    } )
+})
+
+pm.test("Should verify type shortlink", () => {
+        resBody.map(item => {
+        pm.expect(item.shortLink).to.be.a("string");
+        pm.expect(item.shortLink).exist;
+    })
+})
+
+# Some automative tests to action Update card. Use PUT and add URL.
+# All of variable from URL was added to collection variables.
+
+PUT {{basicURL}}/cards/{{cardID}}?key={{key}}&token={{token}}&name={{NewCardName}}&desc={{NewCardDesc}}
+
+let resBody
+
+pm.test("Should verify status code", () => {
+    pm.expect(pm.response.code).eql(200);
+    resBody = pm.response.json();
+})
+
+pm.test("Should verify upadte value name", () => {
+    pm.expect(resBody.name).to.eql(pm.collectionVariables.get("NewCardName"));
+})
+
+pm.test("Should verify upadte value desc", () => {
+    pm.expect(resBody.desc).to.eql(pm.collectionVariables.get("NewCardDesc"));
+})
+
+

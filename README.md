@@ -9,7 +9,11 @@ I am precise and focused on details, determined and I try to improve my knowledg
 In this repository I put some example of my work.
 Also, I am learning Python and I am putting my first program into this repository.
 ### Test scenario
-This is a draft test scenario that I have been creating 
+This is a draft test scenario that I have been working on.
+
+### Postman_Lab 
+This section includes some of my Postman Automated Tests exercises.
+
 ### Program to creating a character in the RPG Warhammer
 I will try to add as many possibilities to this program as I can, but these are my first steps in programming.
 In the first phase of creating this code, user will need polyhedral dice and a character card to create a character.
