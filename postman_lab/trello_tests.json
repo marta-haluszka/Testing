@@ -1,5 +1,5 @@
 # Some automative tests to action Create board. Use POST and add URL.
-# All of variable from URL was added to collection variables.
+# All of variable from URL was added manually to collection variables.
 
 POST {{basicURL}}boards/?name={{boardName}}&key={{key}}&token={{token}}
 
@@ -20,7 +20,7 @@ pm.test("Sholud verify ID lenght", () => {
 })
 
 # Some automative tests to action New list on board. Use POST and add URL
-# All of variable from URL was added to collection variables.
+# All of variable from URL was added manually to collection variables.
 
 POST {{basicURL}}boards/{{boardID}}/lists?name={{listName}}&key={{key}}&token={{token}}
 
@@ -38,7 +38,7 @@ pm.test("Should verify name list", () => {
 pm.collectionVariables.set("listID", resBody.id)
 
 # Some automative tests to action Get board lists. Use GET and add URL.
-# All of variable from URL was added to collection variables.
+# All of variable from URL was added manually to collection variables.
 
 GET {{basicURL}}boards/{{boardID}}/lists?key={{key}}&token={{token}}
 
@@ -58,7 +58,7 @@ pm.test("Should verify close value", () => {
 pm.collectionVariables.set("listName", resBody.name)
 
 # Some automative tests to action Get board cards. Use GET and add URL.
-# All of variable from URL was added to collection variables.
+# All of variable from URL was added manually to collection variables.
 
 GET {{basicURL}}/boards/{{boardID}}/cards?key={{key}}&token={{token}}
 
@@ -91,7 +91,7 @@ pm.test("Should verify type shortlink", () => {
 })
 
 # Some automative tests to action Update card. Use PUT and add URL.
-# All of variable from URL was added to collection variables.
+# All of variable from URL was added manually to collection variables.
 
 PUT {{basicURL}}/cards/{{cardID}}?key={{key}}&token={{token}}&name={{NewCardName}}&desc={{NewCardDesc}}
 
@@ -102,6 +102,7 @@ pm.test("Should verify status code", () => {
     resBody = pm.response.json();
 })
 
+# Variables from here was set in manually to collection variables.
 pm.test("Should verify upadte value name", () => {
     pm.expect(resBody.name).to.eql(pm.collectionVariables.get("NewCardName"));
 })
