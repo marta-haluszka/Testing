@@ -23,7 +23,6 @@ I am precise and focused on details, determined and I try to improve my knowledg
 - Taking care that the solution presented to the customer is user-friendly and intuitive.
 4. **Fourth project**:
 - Create user guides for client software and developer-created plugins.
-- In this repository, I put some examples of my work.
 
 ### Program to creating a character in the RPG Warhammer
 Also, I am learning Python and I am putting my first program into this repository. I will try to add as many possibilities to this program as I can, but these are my first steps in programming.
