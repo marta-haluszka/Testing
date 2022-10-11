@@ -8,9 +8,9 @@ In my work I had already tested web applications and reported the bugs I found i
 I am precise and focused on details, determined and I try to improve my knowledge every day. So far I have been working on these projects:
 1. **First project**
 - Manual testing of the web application - searching site containing suggestions, extensions, filter parameters, additional filters, and grouping.
-- Unit tests - checking whether the programmers have correctly completed individual tickets,
-- Functional tests - checking whether the application has the necessary functionalities
-- Exploratory tests - checking whether the application is user-friendly and whether it meets all the assumed business requirements
+- Unit tests - checking whether the programmers have correctly completed individual tickets.
+- Functional tests - checking whether the application has the necessary functionalities.
+- Exploratory tests - checking whether the application is user-friendly and whether it meets all the assumed business requirements.
 - Acceptance tests - checking the operation of the entire application before handing it over to the client.
 2. **Second project**:
 - Creating and configuring virtual machines for automatic testing of client software on various operating systems (Darwin, Windows, Linux).
